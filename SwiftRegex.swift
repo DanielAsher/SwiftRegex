@@ -13,6 +13,8 @@
 
 import Foundation
 
+infix operator  <- { associativity left precedence 130 }
+
 private var swiftRegexCache = Dictionary<String,NSRegularExpression>()
 public let regexNoGroup = "__nil__"
 
@@ -76,7 +78,7 @@ public class SwiftRegex: NSObject, BooleanType {
         patched[pattern] ~= template
         return saveFile( path, newContents: patched )
     }
-    
+
     final var targetRange: NSRange {
         return NSRange(location: 0,length: target.length)
     }
@@ -152,7 +154,7 @@ public class SwiftRegex: NSObject, BooleanType {
     func matchResults( options: NSMatchingOptions = nil ) -> [NSTextCheckingResult] {
         return regex.matchesInString( target as String, options: options, range: targetRange ) as! [NSTextCheckingResult]
     }
-    
+
     public func ranges( options: NSMatchingOptions = nil ) -> [NSRange] {
         return matchResults( options: options ).map { $0.range }
     }
@@ -160,7 +162,7 @@ public class SwiftRegex: NSObject, BooleanType {
     public func matches( options: NSMatchingOptions = nil ) -> [String] {
         return matchResults( options: options ).map { self.substring($0.range) }
     }
-    
+
     public func allGroups( options: NSMatchingOptions = nil ) -> [[String]] {
         return matchResults( options: options ).map { self.groupsForMatch($0) }
     }
@@ -268,7 +270,7 @@ public func RegexMutable( string: NSString ) -> NSMutableString {
 // for switch
 public var lastRegexMatchGroups: [String!]!
 
-public func ~= ( left: String, right: String ) -> Bool {
+public func <- ( left: String, right: String ) -> Bool {
     if let groups = SwiftRegex( target: right, pattern: left ).groups() {
         lastRegexMatchGroups = groups.map { $0 != regexNoGroup ? $0 : nil }
         return true
@@ -277,7 +279,7 @@ public func ~= ( left: String, right: String ) -> Bool {
 }
 
 // for replacements
-public func ~= ( left: SwiftRegex, right: String ) -> Bool {
+public func <- ( left: SwiftRegex, right: String ) -> Bool {
     return left.substituteMatches( {
         (match: NSTextCheckingResult, stop: UnsafeMutablePointer<ObjCBool>) in
         return left.regex.replacementStringForResult( match,
@@ -285,7 +287,7 @@ public func ~= ( left: SwiftRegex, right: String ) -> Bool {
     } )
 }
 
-public func ~= ( left: SwiftRegex, right: [String] ) -> Bool {
+public func <- ( left: SwiftRegex, right: [String] ) -> Bool {
     var matchNumber = 0
     return left.substituteMatches( {
         (match: NSTextCheckingResult, stop: UnsafeMutablePointer<ObjCBool>) in
@@ -299,14 +301,14 @@ public func ~= ( left: SwiftRegex, right: [String] ) -> Bool {
     } )
 }
 
-public func ~= ( left: SwiftRegex, right: (String) -> String ) -> Bool {
+public func <- ( left: SwiftRegex, right: (String) -> String ) -> Bool {
     return left.substituteMatches( {
         (match: NSTextCheckingResult, stop: UnsafeMutablePointer<ObjCBool>) in
         return right( left.substring(match.range) )
     } )
 }
 
-public func ~= ( left: SwiftRegex, right: ([String]) -> String ) -> Bool {
+public func <- ( left: SwiftRegex, right: ([String]) -> String ) -> Bool {
     return left.substituteMatches( {
         (match: NSTextCheckingResult, stop: UnsafeMutablePointer<ObjCBool>) in
         return right( left.groupsForMatch(match) )
