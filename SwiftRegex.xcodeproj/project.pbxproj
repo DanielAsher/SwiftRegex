@@ -12,6 +12,10 @@
 		659D4D2F1AE5408D00275D22 /* SwiftRegex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659D4D181AE5408D00275D22 /* SwiftRegex.framework */; };
 		659D4D301AE5408D00275D22 /* SwiftRegex.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 659D4D181AE5408D00275D22 /* SwiftRegex.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		659D4D381AE540DB00275D22 /* SwiftRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3FF62C195CB591003933EB /* SwiftRegex.swift */; };
+		65CFB7401AEDE8A50066E8D6 /* SwiftRegexOSX.h in Headers */ = {isa = PBXBuildFile; fileRef = 65CFB73F1AEDE8A50066E8D6 /* SwiftRegexOSX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65CFB7461AEDE8A50066E8D6 /* SwiftRegex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65CFB73B1AEDE8A50066E8D6 /* SwiftRegex.framework */; };
+		65CFB74D1AEDE8A50066E8D6 /* SwiftRegexOSXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CFB74C1AEDE8A50066E8D6 /* SwiftRegexOSXTests.swift */; };
+		65CFB7541AEDE8E60066E8D6 /* SwiftRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3FF62C195CB591003933EB /* SwiftRegex.swift */; };
 		BB9C6368195C76EF0079384F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9C6367195C76EF0079384F /* AppDelegate.swift */; };
 		BB9C636A195C76EF0079384F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9C6369195C76EF0079384F /* ViewController.swift */; };
 		BB9C636F195C76EF0079384F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB9C636E195C76EF0079384F /* Images.xcassets */; };
@@ -40,6 +44,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 659D4D171AE5408D00275D22;
 			remoteInfo = SwiftRegex;
+		};
+		65CFB7471AEDE8A50066E8D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB9C635A195C76EF0079384F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65CFB73A1AEDE8A50066E8D6;
+			remoteInfo = SwiftRegexOSX;
 		};
 		BB9C6375195C76EF0079384F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -70,6 +81,12 @@
 		659D4D1C1AE5408D00275D22 /* SwiftRegex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftRegex.h; sourceTree = "<group>"; };
 		659D4D221AE5408D00275D22 /* SwiftRegexTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftRegexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		659D4D2A1AE5408D00275D22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65CFB73B1AEDE8A50066E8D6 /* SwiftRegex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftRegex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65CFB73E1AEDE8A50066E8D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65CFB73F1AEDE8A50066E8D6 /* SwiftRegexOSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftRegexOSX.h; sourceTree = "<group>"; };
+		65CFB7451AEDE8A50066E8D6 /* SwiftRegexOSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftRegexOSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65CFB74B1AEDE8A50066E8D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65CFB74C1AEDE8A50066E8D6 /* SwiftRegexOSXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftRegexOSXTests.swift; sourceTree = "<group>"; };
 		BB3FF62C195CB591003933EB /* SwiftRegex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftRegex.swift; sourceTree = SOURCE_ROOT; };
 		BB9C6362195C76EF0079384F /* SwiftRegexApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftRegexApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB9C6366195C76EF0079384F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -96,6 +113,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				659D4D231AE5408D00275D22 /* SwiftRegex.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65CFB7371AEDE8A50066E8D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65CFB7421AEDE8A50066E8D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65CFB7461AEDE8A50066E8D6 /* SwiftRegex.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +183,40 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		65CFB73C1AEDE8A50066E8D6 /* SwiftRegexOSX */ = {
+			isa = PBXGroup;
+			children = (
+				65CFB73F1AEDE8A50066E8D6 /* SwiftRegexOSX.h */,
+				65CFB73D1AEDE8A50066E8D6 /* Supporting Files */,
+			);
+			path = SwiftRegexOSX;
+			sourceTree = "<group>";
+		};
+		65CFB73D1AEDE8A50066E8D6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				65CFB73E1AEDE8A50066E8D6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65CFB7491AEDE8A50066E8D6 /* SwiftRegexOSXTests */ = {
+			isa = PBXGroup;
+			children = (
+				65CFB74C1AEDE8A50066E8D6 /* SwiftRegexOSXTests.swift */,
+				65CFB74A1AEDE8A50066E8D6 /* Supporting Files */,
+			);
+			path = SwiftRegexOSXTests;
+			sourceTree = "<group>";
+		};
+		65CFB74A1AEDE8A50066E8D6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				65CFB74B1AEDE8A50066E8D6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		BB9C6359195C76EF0079384F = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +224,8 @@
 				BB9C6377195C76EF0079384F /* SwiftRegexAppTests */,
 				659D4D191AE5408D00275D22 /* SwiftRegex */,
 				659D4D281AE5408D00275D22 /* SwiftRegexTests */,
+				65CFB73C1AEDE8A50066E8D6 /* SwiftRegexOSX */,
+				65CFB7491AEDE8A50066E8D6 /* SwiftRegexOSXTests */,
 				BB9C6363195C76EF0079384F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -169,6 +237,8 @@
 				BB9C6374195C76EF0079384F /* SwiftRegexAppTests.xctest */,
 				659D4D181AE5408D00275D22 /* SwiftRegex.framework */,
 				659D4D221AE5408D00275D22 /* SwiftRegexTests.xctest */,
+				65CFB73B1AEDE8A50066E8D6 /* SwiftRegex.framework */,
+				65CFB7451AEDE8A50066E8D6 /* SwiftRegexOSXTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -224,6 +294,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		65CFB7381AEDE8A50066E8D6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65CFB7401AEDE8A50066E8D6 /* SwiftRegexOSX.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -262,6 +340,42 @@
 			name = SwiftRegexTests;
 			productName = SwiftRegexTests;
 			productReference = 659D4D221AE5408D00275D22 /* SwiftRegexTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		65CFB73A1AEDE8A50066E8D6 /* SwiftRegexOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65CFB7521AEDE8A50066E8D6 /* Build configuration list for PBXNativeTarget "SwiftRegexOSX" */;
+			buildPhases = (
+				65CFB7361AEDE8A50066E8D6 /* Sources */,
+				65CFB7371AEDE8A50066E8D6 /* Frameworks */,
+				65CFB7381AEDE8A50066E8D6 /* Headers */,
+				65CFB7391AEDE8A50066E8D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftRegexOSX;
+			productName = SwiftRegexOSX;
+			productReference = 65CFB73B1AEDE8A50066E8D6 /* SwiftRegex.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		65CFB7441AEDE8A50066E8D6 /* SwiftRegexOSXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65CFB7531AEDE8A50066E8D6 /* Build configuration list for PBXNativeTarget "SwiftRegexOSXTests" */;
+			buildPhases = (
+				65CFB7411AEDE8A50066E8D6 /* Sources */,
+				65CFB7421AEDE8A50066E8D6 /* Frameworks */,
+				65CFB7431AEDE8A50066E8D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65CFB7481AEDE8A50066E8D6 /* PBXTargetDependency */,
+			);
+			name = SwiftRegexOSXTests;
+			productName = SwiftRegexOSXTests;
+			productReference = 65CFB7451AEDE8A50066E8D6 /* SwiftRegexOSXTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		BB9C6361195C76EF0079384F /* SwiftRegexApp */ = {
@@ -317,6 +431,12 @@
 						CreatedOnToolsVersion = 6.3;
 						TestTargetID = BB9C6361195C76EF0079384F;
 					};
+					65CFB73A1AEDE8A50066E8D6 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					65CFB7441AEDE8A50066E8D6 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
 					BB9C6361195C76EF0079384F = {
 						CreatedOnToolsVersion = 6.0;
 					};
@@ -343,6 +463,8 @@
 				BB9C6373195C76EF0079384F /* SwiftRegexAppTests */,
 				659D4D171AE5408D00275D22 /* SwiftRegex */,
 				659D4D211AE5408D00275D22 /* SwiftRegexTests */,
+				65CFB73A1AEDE8A50066E8D6 /* SwiftRegexOSX */,
+				65CFB7441AEDE8A50066E8D6 /* SwiftRegexOSXTests */,
 			);
 		};
 /* End PBXProject section */
@@ -356,6 +478,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		659D4D201AE5408D00275D22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65CFB7391AEDE8A50066E8D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65CFB7431AEDE8A50066E8D6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -396,6 +532,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		65CFB7361AEDE8A50066E8D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65CFB7541AEDE8E60066E8D6 /* SwiftRegex.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65CFB7411AEDE8A50066E8D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65CFB74D1AEDE8A50066E8D6 /* SwiftRegexOSXTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB9C635E195C76EF0079384F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -430,6 +582,11 @@
 			isa = PBXTargetDependency;
 			target = 659D4D171AE5408D00275D22 /* SwiftRegex */;
 			targetProxy = 659D4D2D1AE5408D00275D22 /* PBXContainerItemProxy */;
+		};
+		65CFB7481AEDE8A50066E8D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65CFB73A1AEDE8A50066E8D6 /* SwiftRegexOSX */;
+			targetProxy = 65CFB7471AEDE8A50066E8D6 /* PBXContainerItemProxy */;
 		};
 		BB9C6376195C76EF0079384F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -535,6 +692,104 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftRegexApp.app/SwiftRegexApp";
+			};
+			name = Release;
+		};
+		65CFB74E1AEDE8A50066E8D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftRegexOSX/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftRegex;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		65CFB74F1AEDE8A50066E8D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = SwiftRegexOSX/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftRegex;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		65CFB7501AEDE8A50066E8D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftRegexOSXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		65CFB7511AEDE8A50066E8D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = SwiftRegexOSXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -695,6 +950,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		65CFB7521AEDE8A50066E8D6 /* Build configuration list for PBXNativeTarget "SwiftRegexOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65CFB74E1AEDE8A50066E8D6 /* Debug */,
+				65CFB74F1AEDE8A50066E8D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		65CFB7531AEDE8A50066E8D6 /* Build configuration list for PBXNativeTarget "SwiftRegexOSXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65CFB7501AEDE8A50066E8D6 /* Debug */,
+				65CFB7511AEDE8A50066E8D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		BB9C635D195C76EF0079384F /* Build configuration list for PBXProject "SwiftRegex" */ = {
 			isa = XCConfigurationList;
